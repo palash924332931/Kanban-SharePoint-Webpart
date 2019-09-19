@@ -1,0 +1,230 @@
+.ms-dlgOverlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background-color: #999;
+    display: none;
+}
+.ms-dlgContent {
+    border: 1px solid #c6c6c6;
+    position: absolute;
+    background-color: #fff !important;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.47);
+}
+.ms-dlgCloseBtn > span {
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.ms-dlgTitleBtns {
+    margin-top: -10px;
+    margin-right: 0;/*-18px;*/
+    height: 30px;
+    float: right;
+}
+.ms-dlgTitle {
+    padding: 13px 19px 15px;
+    white-space: nowrap;
+    cursor: move;
+    overflow: hidden;
+}
+#s4-workspace {
+    overflow: auto;
+    position: relative;
+}
+.ms-dlgContent, #s4-workspace {
+    background-color: #F2F2F2;
+}
+.ms-dlgTitleText {
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ms-accentText, .ms-accentText:visited {
+    color: #0072c6;
+}
+.ms-dlgContent h1, .ms-dlgContent .ms-h1 {
+    font-family: "Segoe UI Light","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+    font-size: 2.3em;
+    color: #777;
+    font-weight: 200;
+}
+.ms-dlg-heading, h2.ms-dlg-heading {
+    font-family: "Segoe UI Semilight","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+    font-size: 1.46em;
+    color: #444;
+}
+.ms-dlgFrameContainer {
+    padding: 0px 19px 10px;
+    overflow: auto;
+}
+.ms-dlgFrame {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.ms-dialog > .ms-backgroundImage, .ms-dialogBody.ms-backgroundImage {
+    background-image: none;
+}
+.ms-dialog body {
+    background-color: #F2F2F2;
+}
+.ms-dialog body {
+    background-color: #fff;
+}
+.ms-backgroundImage {
+    background-image: url();
+}
+.ms-dialog #s4-bodyContainer {
+    min-height: 0;
+    height: auto !important;
+}
+.ms-dialog #s4-bodyContainer, .ms-fullscreenmode #s4-bodyContainer {
+    background-image: none;
+}
+#mymTopBorder {
+    padding-top: 6px;
+    background-color: #509E2F;
+    min-width: 1235px;
+}
+#sideNavBox.mymLeftColumn {
+    width: 211px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+#sideNavBox {
+    margin-left: 17px;
+    width: 100%;
+}
+#sideNavBox {
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 180px;
+}
+#sideNavBox.mymLeftColumn {
+    width: 211px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+#sideNavBox {
+    margin-left: 17px;
+    width: 100%;
+}
+#sideNavBox {
+    /*background: #354753 url(Images/sidenavbox_bg.png) -189px repeat-y;*/
+    background-color: #354753!important;
+    min-height: 100%;
+    height: auto!important;
+}
+.s4-notdlg, .ms-dialogHidden, .ms-dialog-nr body #s4-ribbonrow, .ms-dialog-nr body #globalNavBox, .ms-dialog #footer, #ms-gearPageTitle {
+    display: none !important;
+}
+.ms-noList ul, .ms-noList ol, .ms-noList {
+    list-style-type: none;
+    padding-left: 0px;
+}
+.ms-forceWrap {
+    word-wrap: break-word;
+}
+#DeltaPlaceHolderLeftNavBar {
+    margin-top: 17px;
+}
+
+.ms-core-navigation {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif!important;
+}
+.ms-core-navigation {
+    font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+}
+#sideNavBox.mymLeftColumn .ms-core-sideNavBox-removeLeftMargin {
+    margin-right: -10px;
+}
+
+#sideNavBox .ms-core-sideNavBox-removeLeftMargin {
+    margin-right: 17px;
+}
+.ms-core-sideNavBox-removeLeftMargin {
+    margin-left: -20px;
+}
+.ms-dialog #contentBox.mymMainColumn {
+    margin-left: 0px;
+    min-width: 0px;
+}
+
+#contentBox.mymMainColumn {
+    margin-right: 0px;
+    margin-left: 211px;
+    min-width: 1024px;
+}
+.ms-dialog #contentBox {
+    min-width: 0px;
+}
+#contentBox {
+    min-width: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+#suiteBar {
+    height: 90px;
+    font-size: 1.5em;
+}
+#s4-ribbonrow {
+    background-image: none !important;
+}
+
+#s4-ribbonrow {
+    position: relative;
+}
+.ms-dialog #globalNavBox {
+    background: none;
+    border-width: 0px;
+    height: 134px;
+}
+
+#globalNavBox, .ms-clientcontrol-chromeheader {
+    background-color: #e0e1e1;
+}
+#globalNavBox, .ms-clientcontrol-chromeheader {
+    background-color: rgba( 239,239,239,0.78 );
+    width: 100%;
+    height: 35px;
+}
+.ms-dialog #contentBox.mymMainColumn > .inner {
+    padding-right: 10px;
+}
+.ms-dialog #contentBox.mymMainColumn > .inner > div {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#contentBox.mymMainColumn > .inner > div {
+    padding-left: 30px;
+    padding-right: 15px;
+}
+.ms-core-tableNoSpace {
+    border-spacing: 0px;
+}
+
+.ms-dlgContent input[type=button], .ms-dlgContent input[type=reset], .ms-dlgContent input[type=submit], button {
+    /* min-width: 6em; */
+    padding: 7px 10px;
+    border: 1px solid #ababab;
+    background-color: #fdfdfd;
+    background-color: #fdfdfd;
+    margin-left: 10px;
+    font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+    font-size: 11px;
+    color: #444;
+}
+
+.ms-accessible, .ms-hidden, a.ms-skip, a:hover.ms-skip, a:visited.ms-skip, a.ms-TurnOnAcc, a.ms-SkiptoMainContent, a.ms-SkiptoNavigation {
+    position: absolute;
+    top: -2000px;
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    display: block;
+}

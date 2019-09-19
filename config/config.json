@@ -1,0 +1,16 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+    "version": "2.0",
+    "bundles": {
+        "wp-kanban-view-web-part": {
+            "components": [{
+                "entrypoint": "./lib/webparts/wpKanbanView/WpKanbanViewWebPart.js",
+                "manifest": "./src/webparts/wpKanbanView/WpKanbanViewWebPart.manifest.json"
+            }]
+        }
+    },
+    "externals": {},
+    "localizedResources": {
+        "WpKanbanViewWebPartStrings": "lib/webparts/wpKanbanView/loc/{locale}.js"
+    }
+}

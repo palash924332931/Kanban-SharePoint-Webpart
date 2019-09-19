@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "project-room-client-side-solution",
+    "id": "817a5a05-2798-48f0-8b8f-76a1e29429de",
+    "version": "1.0.0.2",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true
+  },
+  "paths": {
+    "zippedPackage": "solution/project-room.sppkg"
+  }
+}

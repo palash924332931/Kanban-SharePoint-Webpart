@@ -1,0 +1,11 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "isCreatingSolution": true,
+    "environment": "spo",
+    "version": "1.6.0",
+    "libraryName": "project-room",
+    "libraryId": "817a5a05-2798-48f0-8b8f-76a1e29429de",
+    "packageManager": "npm",
+    "componentType": "webpart"
+  }
+}

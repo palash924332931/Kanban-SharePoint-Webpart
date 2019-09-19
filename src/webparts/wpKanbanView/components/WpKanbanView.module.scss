@@ -1,0 +1,256 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.wpKanbanView {
+  background-color: #FFF;
+  letter-spacing: 0px;
+  -webkit-box-shadow: 1px 1px 16px 1px rgba(0, 0, 0, .1);
+  -moz-box-shadow: 1px 1px 16px 1px rgba(0, 0, 0, .1);
+  box-shadow: 1px 1px 16px 1px rgba(0, 0, 0, .1);
+  -ms-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  padding: 15px;
+  min-height: 132px;
+  overflow: auto;
+  max-height: calc(100vh - 250px);
+  max-width: 100% !important;
+  display: inline-block;
+  width: auto !important;
+
+  .columnWrap {
+    display: inline-flex;
+    flex-wrap: nowrap;
+  }
+
+  .heading {
+    font-size: 18px;
+    color: #4B506A;
+    font-weight: bold;
+    margin: 0 20px 5px 0px;
+    .btnBackButton {
+      display: inline-block;
+      height: 26px;
+      font-size: 14px;
+      color: #fff;
+      padding: 0px 10px;
+      background: #0078d4;
+      outline: 0;
+      border: 0;
+      margin-left: 20px;
+      transition: 0.3s;
+      &:hover {
+        background: #01599c;
+      }
+    }
+  }
+  .leftSpace {
+    margin: 0px;
+  }
+
+  .csBox {
+    border: 1px solid #eee;
+    background: #fff;
+    border-radius: 10px;
+    width: 340px !important;
+    min-width: 340px;
+    display: block;
+    margin: 0 5px 10px 5px;
+    float: left;
+    min-height: 400px;
+  }
+
+  .csBoxHeading {
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, .03);
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .csBoxHeading h3 {
+    font-size: 16px;
+    margin: 0;
+    // padding-bottom: 7px;
+    text-transform: capitalize;
+    font-weight: 500;
+    pointer-events: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .csBoxHeading>* {
+    margin: 0;
+    padding: 0;
+  }
+
+  .csBoxHeading .csAdd {
+    text-decoration: none;
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    background: green;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    font-weight: 800;
+    transition: 0.3s;
+  }
+
+  .csBoxHeading a:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5)
+  }
+
+  .csBody {
+    padding: 0px 10px 0px 10px !important;
+  }
+
+  .csBody h4 {
+    font-size: 13px;
+    margin: 0;
+    padding-bottom: 7px;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+
+  .csItem {
+    font-size: 13px;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
+    cursor: move;
+  }
+
+  .csItem p,
+  .csItem p span {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 13px !important;
+  }
+
+  .csItem table {
+    width: 100%;
+  }
+
+  .csItem table,
+  .csItem table tr,
+  .csItem table tr td {
+    border-collapse: collapse;
+  }
+
+  .csItem table tr td {
+    padding: 5px 0;
+    font-size: 13px !important;
+    width: 50%;
+  }
+
+  .row {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    background-color: $ms-color-themeDark;
+    padding: 20px;
+  }
+
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg10;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+  }
+
+  .title {
+    @include ms-font-xl;
+    @include ms-fontColor-white;
+  }
+
+  .subTitle {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .description {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+
+  .highlightRow {
+    background: #eee;
+    font-weight: 600;
+  }
+
+  .highlightRow td {
+    padding-left: 4px !important;
+  }
+
+  .button {
+    // Our button
+    text-decoration: none;
+    height: 32px;
+
+    // Primary Button
+    min-width: 80px;
+    background-color: $ms-color-themePrimary;
+    border-color: $ms-color-themePrimary;
+    color: $ms-color-white;
+
+    // Basic Button
+    outline: transparent;
+    position: relative;
+    font-family: "Segoe UI WestEuropean", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: $ms-font-size-m;
+    font-weight: $ms-font-weight-regular;
+    border-width: 0;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 16px;
+
+    .label {
+      font-weight: $ms-font-weight-semibold;
+      font-size: $ms-font-size-m;
+      height: 32px;
+      line-height: 32px;
+      margin: 0 4px;
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+
+  .dragOverClass {
+    .csItem{
+      font-size: 13px;
+      transform: translateY(20px);
+      transition: transform 0.3s;
+      box-shadow: 0 10px 10px rgba(0,0,0,0.5)
+    }
+    // box-shadow:
+    //         1px 1px #53a7ea,
+    //         2px 2px #53a7ea,
+    //         3px 3px #53a7ea;
+    // -webkit-transform: translateX(-3px);
+    // transform: translateX(-3px);
+    
+  }
+  .datedanger {
+    background-color: #D52F46;
+    color: #fff;
+    // padding: 1px 2px;
+    padding: 1px 2px 4px 2px
+  }
+  .clickable {
+    cursor: pointer;
+  }
+  .newBtn {
+    font-size: 13px;
+    // padding: 0 10px;
+    padding: 0 10px 2px 10px;
+    line-height: 16px;
+  }
+}
